@@ -136,7 +136,16 @@ bindsym $mod+0 workspace $workspace10
 bindsym $mod+M workspace $workspaceM
 bindsym $mod+P workspace $workspaceP
 bindsym $mod+T workspace $workspaceT
-
+# numpad
+bindsym $mod+KP_1 workspace $workspace1
+bindsym $mod+KP_2 workspace $workspace2
+bindsym $mod+KP_3 workspace $workspace3
+bindsym $mod+KP_5 workspace $workspace5
+bindsym $mod+KP_6 workspace $workspace6
+bindsym $mod+KP_7 workspace $workspace7
+bindsym $mod+KP_8 workspace $workspace8
+bindsym $mod+KP_9 workspace $workspace9
+bindsym $mod+KP_0 workspace $workspace10
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace $workspace1
