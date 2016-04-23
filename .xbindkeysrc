@@ -1,0 +1,12 @@
+"xdotool click 2"
+b:13
+
+"xdotool key XF86AudioLowerVolume"
+b:8
+
+"xdotool key XF86AudioRaiseVolume"
+b:9
+
+"xdotool key XF86AudioPlay"
+b:10
+
