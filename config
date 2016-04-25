@@ -97,8 +97,8 @@ bindsym $mod+a focus parent
 
 #Monitor vars
 set $leftMon "eDP1"
-set $midMon "VGA1"
-set $rightMon "HDMI1"
+set $midMon "HDMI1"
+set $rightMon "VGA1"
 
 #Workspace vars
 set $workspaceM "M: "
@@ -256,13 +256,15 @@ bar {
         }
 }
 bar {
+        font xft:Droid Sans Mono, FontAwesome 13.5
         tray_output none
         workspace_buttons no
         status_command i3blocks -c .config/i3/i3blocks.conf
         position bottom
         colors {
-          background $bg-color
-              separator #757575
+          #background #002b36
+          background black
+          separator #757575
         }
 }
 exec .config/i3/screens.sh
