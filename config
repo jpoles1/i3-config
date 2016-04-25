@@ -104,6 +104,7 @@ set $rightMon "HDMI1"
 set $workspaceM "M: "
 set $workspaceP "P: "
 set $workspaceT "T: "
+set $workspaceC "C: "
 set $workspaceK "K: "
 set $workspace1 "1: "
 set $workspace2 "2: "
@@ -131,6 +132,7 @@ workspace $workspace10 output $rightMon
 workspace $workspaceP output $rightMon
 workspace $workspaceM output $rightMon
 workspace $workspaceK output $rightMon
+workspace $workspaceC output $rightMon
 
 # switch to workspace
 bindsym $mod+1 workspace $workspace1
@@ -147,6 +149,7 @@ bindsym $mod+M workspace $workspaceM
 bindsym $mod+P workspace $workspaceP
 bindsym $mod+K workspace $workspaceK
 bindsym $mod+T workspace $workspaceT
+bindsym $mod+C workspace $workspaceC
 # numpad
 bindsym $mod+KP_1 workspace $workspace1
 bindsym $mod+KP_2 workspace $workspace2
@@ -173,12 +176,13 @@ bindsym $mod+Shift+M move container to workspace $workspaceM
 bindsym $mod+Shift+P move container to workspace $workspaceP
 bindsym $mod+Shift+K move container to workspace $workspaceK
 bindsym $mod+Shift+T move container to workspace $workspaceT
+bindsym $mod+Shift+C move container to workspace $workspaceC
 
 #Assign programs to appropriate workspaces
 assign [class="Spotify"] $workspaceM
 for_window [class="Spotify"] move to workspace $workspaceM
 #assign [class="Atom"] $workspaceP
-for_window [title="^Google Calendar"] move workspace $workspace9
+for_window [title="^Google Calendar"] move workspace $workspaceC
 for_window [title="^Messenger"] move workspace $workspace10
 for_window [title="^Inbox"] move workspace $workspace10
 for_window [title="^Google Keep"] move workspace $workspaceK
@@ -189,7 +193,7 @@ bindsym $mod+Control+Left move workspace to output left
 bindsym $mod+Control+Right move workspace to output right
 
 # reload the configuration file
-bindsym $mod+Shift+c reload
+# bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
