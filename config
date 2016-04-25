@@ -269,8 +269,7 @@ exec .config/i3/screens.sh
 exec nautilus
 exec spotify
 exec xbindkeys
-exec solaare
-exec variety
+exec solaar
 exec_always setxkbmap -layout us -variant altgr-intl -option nodeadkeys
 exec google-chrome --app=https://google.com/calendar
 exec google-chrome --app=https://messenger.com
